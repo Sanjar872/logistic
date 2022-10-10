@@ -256,12 +256,20 @@ rs-slides, rs-slide, rs-slide:before {
   background: var(--qode-main-color);
 }
 
+.qodef-header-logo-link img {
+  border: 1px solid red;
+}
+
+#qodef-page-header-inner {
+  width: 100%;
+}
+
 .qodef-header-navigation {
   border: 1px solid #322626;
 }
 
 .menu-item {
-  border: 3px solid yellow;
+  border: 1px solid red;
 }
 
 .qodef-drop-down-second {

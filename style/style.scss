@@ -221,10 +221,14 @@ rs-slides, rs-slide, rs-slide:before {
     background: var(--qode-main-color);
 }
 
+.qodef-header-logo-link img {
+    border: 1px solid red;
+   
 
-
-
-
+}
+#qodef-page-header-inner {
+    width: 100%;
+}
 
 
 
@@ -235,7 +239,7 @@ rs-slides, rs-slide, rs-slide:before {
 }
 
 .menu-item {
-    border: 3px solid yellow;
+    border: 1px solid red;
     
 }
 
