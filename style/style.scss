@@ -221,14 +221,14 @@ rs-slides, rs-slide, rs-slide:before {
     background: var(--qode-main-color);
 }
 
-.qodef-header-logo-link img {
-    border: 1px solid red;
+// .qodef-header-logo-link img {
+//     border: 1px solid red;
    
 
-}
-#qodef-page-header-inner {
-    width: 100%;
-}
+// }
+// #qodef-page-header-inner {
+//     width: 100%;
+// }
 
 
 
@@ -267,4 +267,20 @@ rs-slides, rs-slide, rs-slide:before {
 
 #qodef-page-header {
     border: 3px solid red;
+}
+
+//logo 
+
+.logo-brend {
+    width: 100% !important;
+    height: 300px!important;
+    object-fit: contain!important;
+    border: 2px solid green;
+    
+}
+
+.bren-div {
+    width: 100px;
+    height: 90px;
+    border: 1px solid red;
 }
