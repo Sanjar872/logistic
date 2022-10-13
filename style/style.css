@@ -14,6 +14,7 @@ element.style {
 }
 
 .elementor *, .elementor :after, .elementor :before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -30,12 +31,14 @@ rs-slides, rs-slide, rs-slide:before {
 }
 
 rs-module-wrap, rs-module-wrap * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 style attribute {
@@ -88,17 +91,34 @@ rs-module-wrap {
   --flex-shrink: initial;
   --order: initial;
   --align-self: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: var(--flex-direction);
   flex-direction: var(--flex-direction);
+  -ms-flex-wrap: var(--flex-wrap);
   flex-wrap: var(--flex-wrap);
+  -webkit-box-pack: var(--justify-content);
+  -ms-flex-pack: var(--justify-content);
   justify-content: var(--justify-content);
+  -webkit-box-align: var(--align-items);
+  -ms-flex-align: var(--align-items);
   align-items: var(--align-items);
+  -ms-flex-line-pack: var(--align-content);
   align-content: var(--align-content);
   gap: var(--gap);
+  -ms-flex-preferred-size: var(--flex-basis);
   flex-basis: var(--flex-basis);
+  -webkit-box-flex: var(--flex-grow);
+  -ms-flex-positive: var(--flex-grow);
   flex-grow: var(--flex-grow);
+  -ms-flex-negative: var(--flex-shrink);
   flex-shrink: var(--flex-shrink);
+  -webkit-box-ordinal-group: var(--order);
+  -ms-flex-order: var(--order);
   order: var(--order);
-  align-self: var(--align-self);
+  -ms-flex-item-align: var(--align-self);
+  -ms-grid-row-align: var(--align-self);
+      align-self: var(--align-self);
 }
 
 .elementor-50 .elementor-element.elementor-element-dd8860a > .elementor-element-populated {
@@ -130,7 +150,7 @@ rs-module-wrap {
 }
 
 body {
-  font-family: Sarabun, sans-serif;
+  font-family: Sarabun,sans-serif;
   font-size: 18px;
   line-height: 1.444em;
   font-weight: 400;
@@ -205,6 +225,7 @@ body {
 }
 
 .elementor *, .elementor :after, .elementor :before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -221,6 +242,7 @@ rs-slides, rs-slide, rs-slide:before {
 }
 
 .elementor *, .elementor :after, .elementor :before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -257,12 +279,16 @@ rs-slides, rs-slide, rs-slide:before {
   border: 1px solid white;
   background: rgba(255, 179, 0, 0.548);
 }
+
 .rs-layer-static img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 600px) {
   .rs-layer-static {
+    height: 250px !important;
+    width: 250px !important;
     margin-bottom: 80px !important;
   }
 }
@@ -285,6 +311,8 @@ rs-slides, rs-slide, rs-slide:before {
 }
 
 .menu-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -293,7 +321,8 @@ rs-slides, rs-slide, rs-slide:before {
   display: inline-block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /** Custom Select **/
@@ -332,7 +361,7 @@ rs-slides, rs-slide, rs-slide:before {
 .custom-select-trigger:after {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   top: 50%;
@@ -340,14 +369,18 @@ rs-slides, rs-slide, rs-slide:before {
   margin-top: -3px;
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
-  transform: rotate(45deg) translateY(-50%);
-  transition: all 0.4s ease-in-out;
-  transform-origin: 50% 0;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
 }
 
 .custom-select.opened .custom-select-trigger:after {
   margin-top: 3px;
-  transform: rotate(-135deg) translateY(-50%);
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+          transform: rotate(-135deg) translateY(-50%);
 }
 
 .custom-options {
@@ -360,27 +393,32 @@ rs-slides, rs-slide, rs-slide:before {
   margin: 15px 0;
   border: 1px solid #b5b5b5;
   border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
   background: #fff;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .custom-select.opened .custom-options {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .custom-options:before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   bottom: 100%;
   right: 25px;
   width: 7px;
@@ -389,8 +427,10 @@ rs-slides, rs-slide, rs-slide:before {
   border-top: 1px solid #b5b5b5;
   border-left: 1px solid #b5b5b5;
   background: #fff;
-  transform: rotate(45deg);
-  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .option-hover:before {
@@ -407,7 +447,8 @@ rs-slides, rs-slide, rs-slide:before {
   color: #b5b5b5;
   line-height: 47px;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .custom-option:first-of-type {
@@ -426,4 +467,5 @@ rs-slides, rs-slide, rs-slide:before {
 
 .elementor-container {
   padding-right: 100px !important;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
