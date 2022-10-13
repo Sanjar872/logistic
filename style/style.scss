@@ -239,14 +239,28 @@ rs-slides, rs-slide, rs-slide:before {
 // .tp-rs-img {
 // }
 .rs-layer-static {
-    height: 350px !important;
-    background: rgba(255, 179, 0, 0.548);
+    height: 300px !important;
+    max-width: 300px !important;
     border-radius: 50%;
+    border: 1px solid white;
+    background: rgba(255, 179, 0, 0.548);
+
+    img {
+        object-fit: contain;
+    }
+   
+
+    
+    @media (max-width: 1000px)
+     {
+        margin-bottom: 80px !important;
+        
+        // padding: 100px !important;
+    }
+  
+
 }
-.wp-block-image img {
-    // border: 1px solid white;
-    margin-left: -55px;
-}
+
 
 
 
@@ -299,6 +313,7 @@ rs-slides, rs-slide, rs-slide:before {
     // border: 1px solid red !important;
     display: flex !important;
 }
+
 
 
 

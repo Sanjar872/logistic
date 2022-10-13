@@ -251,13 +251,20 @@ rs-slides, rs-slide, rs-slide:before {
 }
 
 .rs-layer-static {
-  height: 350px !important;
-  background: rgba(255, 179, 0, 0.548);
+  height: 300px !important;
+  max-width: 300px !important;
   border-radius: 50%;
+  border: 1px solid white;
+  background: rgba(255, 179, 0, 0.548);
 }
-
-.wp-block-image img {
-  margin-left: -55px;
+.rs-layer-static img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 1000px) {
+  .rs-layer-static {
+    margin-bottom: 80px !important;
+  }
 }
 
 .qodef-drop-down-second {
