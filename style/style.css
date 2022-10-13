@@ -415,4 +415,8 @@ rs-slides, rs-slide, rs-slide:before {
 .custom-option:hover,
 .custom-option.selection {
   background: #f9f9f9;
+}
+
+.elementor-container {
+  padding-right: 100px !important;
 }/*# sourceMappingURL=style.css.map */
