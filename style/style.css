@@ -276,7 +276,6 @@ rs-slides, rs-slide, rs-slide:before {
   height: 300px !important;
   max-width: 300px !important;
   border-radius: 50%;
-  border: 1px solid white;
   background: rgba(255, 179, 0, 0.548);
 }
 
@@ -289,7 +288,7 @@ rs-slides, rs-slide, rs-slide:before {
   .rs-layer-static {
     height: 250px !important;
     width: 250px !important;
-    margin-bottom: 80px !important;
+    margin-bottom: 50px !important;
   }
 }
 
