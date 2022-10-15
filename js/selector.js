@@ -68,3 +68,24 @@ function closeAllSelect(elmnt) {
 }
 
 document.addEventListener("click", closeAllSelect);
+
+
+
+// Slider Home Partner
+
+let swiper = new Swiper(".mySwiper", {
+  watchSlidesProgress: true,
+  slidesPerView: 4,
+  loop: true, 
+  autoplay: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  
+});

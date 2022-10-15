@@ -483,4 +483,51 @@ rs-slides, rs-slide, rs-slide:before {
 .qodef-mobile-header-navigation a:focus {
   border-bottom: 2px solid orange !important;
 }
+
+.Slider_partner {
+  padding: 50px 0;
+}
+
+.Slider_partner .Sliders_title {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.Slider_partner .Sliders_title a {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+
+.Slider_partner .Sliders_title a:active {
+  border-bottom: 2px solid orange;
+}
+
+.Slider_partner .swiper {
+  width: 90%;
+  text-align: end;
+}
+
+.Slider_partner .swiper-slide {
+  padding: 20px !important;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+.Slider_partner .swiper-slide img {
+  height: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 /*# sourceMappingURL=style.css.map */
