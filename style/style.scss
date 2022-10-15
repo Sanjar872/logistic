@@ -440,13 +440,13 @@ rs-slides, rs-slide, rs-slide:before {
         margin: 0 auto;
         width: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        position: relative;
+        // position: relative;
 
         a {
             font-weight: bold;
-            position: absolute;
+            // position: absolute;
             right: 0;
             &:active {
                 border-bottom: 2px solid orange;

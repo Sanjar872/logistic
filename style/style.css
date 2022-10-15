@@ -494,18 +494,16 @@ rs-slides, rs-slide, rs-slide:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .Slider_partner .Sliders_title a {
   font-weight: bold;
-  position: absolute;
   right: 0;
 }
 
