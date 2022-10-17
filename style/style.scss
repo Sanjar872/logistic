@@ -231,7 +231,7 @@ rs-slides, rs-slide, rs-slide:before {
     margin-top: -25px !important;
 }
 #qodef-page-mobile-header-inner img {
-    width: 180px !important;
+    width: 150px !important;
     max-height: 120px !important;
     margin-top: -22px !important;
  
@@ -261,7 +261,7 @@ rs-slides, rs-slide, rs-slide:before {
 
 
 .qodef-drop-down-second {
-    border: 5px solid green ;
+    // border: 5px solid green ;
     display: none !important;
 }
 
@@ -280,13 +280,11 @@ rs-slides, rs-slide, rs-slide:before {
 .bren-div {
     width: 100px;
     height: 90px;
-    // border: 1px solid red;
 }
 
 
 
 .menu-item  {
-    // border: 1px solid red !important;
     display: flex !important;
 }
 
@@ -468,4 +466,8 @@ rs-slides, rs-slide, rs-slide:before {
             object-fit: contain;
         }
       }
+}
+
+.wp-image-2154 {
+    margin-left: -3.5rem;
 }
